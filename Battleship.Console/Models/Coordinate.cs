@@ -12,5 +12,9 @@
             Y = y;
             Status = Grid.Empty;
         }
+        public bool AreCoordinatesEqual(Coordinate otherCoordinate)
+        {
+            return X == otherCoordinate.X && Y == otherCoordinate.Y;
+        }
     }
 }

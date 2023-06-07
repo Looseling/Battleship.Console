@@ -35,9 +35,25 @@ namespace Battleship.Managers
 
                 foreach (Ship ship in ships)
                 {
-                    if (ship.IsAt(coordinate) && ship.IsSunk())
+                    if (ship.IsAt(coordinate))
                     {
-                        return ShotResult.Sink;
+                        foreach (Coordinate shipCoordinate in ship.Coordinates)
+                        {
+                            if (shipCoordinate.AreCoordinatesEqual(coordinate))
+                            {
+                                shipCoordinate.Status = Grid.Hit; // Set the coordinate status to Grid.Hit
+                                break;
+                            }
+                        }
+
+                        if (ship.IsSunk())
+                        {
+                            return ShotResult.Sink;
+                        }
+                        else
+                        {
+                            return ShotResult.Hit;
+                        }
                     }
                 }
 

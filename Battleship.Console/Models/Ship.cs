@@ -23,7 +23,7 @@
 
         public bool IsAt(Coordinate coordinate)
         {
-            return Coordinates.Contains(coordinate);
+            return Coordinates.Any(c => c.AreCoordinatesEqual(coordinate));
         }
 
         public bool IsSunk()
