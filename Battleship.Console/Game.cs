@@ -23,13 +23,10 @@ namespace Battleship
 
         public void Start()
         {
+            board.PrintBoard();
             while (!board.AllShipsSunk())
             {
-                Console.Clear();
-                board.PrintBoard();
-
                 ShotResult result;
-                
                 do
                 {
                     Console.Write("Enter coordinates (e.g., A5): ");
@@ -46,6 +43,8 @@ namespace Battleship
                     }
                 }
                 while (result == ShotResult.Invalid);
+                Console.Clear();
+                board.PrintBoard();
                 Console.WriteLine(result.ToString());
             }
             Console.WriteLine("All ships sunk! You win!");
