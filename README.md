@@ -15,7 +15,11 @@ Now you can sink ships from the comfort of your computer. It's all computery and
 
 5. Once you're in the game directory, type `dotnet run` and hit Enter. The game should start up.
 
+
 ## How to Play
+
+<img src="https://github.com/Looseling/Battleship.Console/assets/69507148/c9f716de-b262-4f5c-b572-abfa27c544d4)" width="250" height="200" />
+
 
 1. When the game starts, you'll see a 10x10 grid. This is your battlefield. It's like that time we played paintball in the park, except less messy.
 
@@ -28,3 +32,6 @@ Now you can sink ships from the comfort of your computer. It's all computery and
 5. If you manage to sink all the ships, you win! Celebrate with a cold one, just like I do at the end of...well, just about anything, really.
 
 Now get out there and sink some ships! And remember, as the great Uncle Ben once said, "With great power comes great responsibility".
+
+
+
